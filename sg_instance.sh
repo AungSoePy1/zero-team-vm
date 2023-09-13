@@ -9,7 +9,7 @@ plain='\033[0m'
 # if  -n $1  &&  $2 == e2-*  &&  -n $3  &&  -n $4  &&  -n $8  &&  $(($(date +%s) - $8)) -lt 120  &&  $(($(date +%s) - $8)) -ge 0 ; then
 
   echo -e "${yellow}Creating instance ...${plain}"
-  instance=$(gcloud dataproc clusters create cluster-404 --enable-component-gateway --region asia-southeast1 --zone asia-southeast1-b --single-node --master-machine-type e2-standard-4 --master-boot-disk-size 500 --image-version 2.0-ubuntu18)
+  instance=$(gcloud dataproc clusters create cluster-zero-team --enable-component-gateway --region asia-southeast1 --zone asia-southeast1-b --single-node --master-machine-type e2-standard-4 --master-boot-disk-size 70 --image-version 2.0-ubuntu18)
   echo -e "${green}Instance created.${plain}"
 
   echo -e "${yellow}Checking firewall rule ...${plain}"
@@ -31,14 +31,15 @@ echo "------------------------------------"
 echo ""
 
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
-echo -e "${GREEN} ___   ___          ________          ___   ___                              ${plain}"
-echo -e "${GREEN}|\  \ |\  \        |\   __  \        |\  \ |\  \                             ${plain}"
-echo -e "${GREEN}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                            ${plain}"
-echo -e "${GREEN} \ \______  \       \ \  \/\  \       \ \______  \                           ${plain}"
-echo -e "${GREEN}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                          ${plain}"
-echo -e "${GREEN}         \ \__\       \ \_______\             \ \__\                         ${plain}"
-echo -e "${GREEN}          \|__|        \|_______|              \|__|                         ${plain}"
-echo -e "${red}Contact the developer https://t.me/nkka404 for more information                ${plain}"
+echo -e "${cyan}  /00000000 /00000000 /0000000   /000000                                      ${plain}"
+echo -e "${cyan} |_____ 00 | 00_____/| 00__  00 /00__  00                                     ${plain}"
+echo -e "${cyan}      /00/ | 00      | 00  \ 00| 00  \ 00                                     ${plain}"
+echo -e "${cyan}     /00/  | 00000   | 0000000/| 00  | 00                                     ${plain}"
+echo -e "${cyan}    /00/   | 00__/   | 00__  00| 00  | 00                                     ${plain}"
+echo -e "${cyan}   /00/    | 00      | 00  \ 00| 00  | 00                                     ${plain}"
+echo -e "${cyan}  /00000000| 00000000| 00  | 00|  000000/                                     ${plain}"
+echo -e "${cyan} |________/|________/|__/  |__/ \______/                                      ${plain}"
+echo -e "${green}Contact the developer https://t.me/Nora7684 for more information             ${plain}"
 echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
 #else
 #  echo -e "${red}Token is invalid or expired. Contact the developer https://t.me/nkka404 for more information.${plain}"
