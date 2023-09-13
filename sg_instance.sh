@@ -3,6 +3,7 @@
 red='\x1b[31;1m'
 yellow='\x1b[33;1m'
 green='\x1b[32;1m'
+cyan='\e[96m'
 plain='\033[0m'
 
 # $1: instance name, $2: machine type, $3: zone, $4: firewall rule name, $5: username, $6: password, $7: message, $8: token
